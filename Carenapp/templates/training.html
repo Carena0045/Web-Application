@@ -1,0 +1,481 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Health Living Awareness Management System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'Carenapp/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Carenapp/css/animate.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'Carenapp/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Carenapp/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Carenapp/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'Carenapp/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'Carenapp/css/ionicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'Carenapp/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'Carenapp/css/jquery.timepicker.css' %}">
+
+    
+    <link rel="stylesheet" href="{% static 'Carenapp/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'Carenapp/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'Carenapp/css/style.css' %}">
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="{% url 'home'%}">HLA<span>MS</span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="{% url 'home'%}" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="nutritionist.html" class="nav-link">nutritionist</a></li>
+	          <li class="nav-item active"><a href="training.html" class="nav-link">training</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item">
+              <a href="register.html" class="nav-link">register</a>
+            </li>
+             <li class="nav-item">
+              <a href="login.html" class="nav-link">login</a>
+            </li>
+             <li class="nav-item">
+              <a href="logout.html" class="nav-link">logout</a>
+            </li>
+	          <li class="nav-item cta"><a href="contact.html" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>Make an Appointment</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <section class="home-slider owl-carousel">
+      <div class="slider-item bread-item" style="background-image: url({% static 'Carenapp/images/bg_1.jpg' %});" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container" data-scrollax-parent="true">
+          <div class="row slider-text align-items-end">
+            <div class="col-md-7 col-sm-12 ftco-animate mb-5">
+              <p class="breadcrumbs" data-scrollax=" properties: { translateY: '70%', opacity: 1.6}"><span class="mr-2"><a href="index.html">Home</a></span> <span>training</span></p>
+              <h1 class="mb-3" data-scrollax=" properties: { translateY: '70%', opacity: .9}">Online training courses</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-12 ftco-animate">
+		            <div class="blog-entry">
+		              <a href="blog-single.html" class="block-20" style="background-image: url({% static 'Carenapp/images/mental8.jpg' %});">
+		              </a>
+		              <div class="text d-flex py-4">
+		                <!-- <div class="meta mb-3">
+		                  <div><a href="#">Sep. 20, 2018</a></div>
+		                  <div><a href="#">Admin</a></div>
+		                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+		                </div> -->
+		                <div class="desc pl-sm-3 pl-md-5">
+			                <h3 class="heading"><a href="#">Online Health and Safety Courses</a></h3>
+			                <p>From Fire Safety to DSE training, all of our health and safety courses are fully interactive and provide users with everything they need to stay safe in the workplace. Each and every course is regularly updated to ensure technical accuracy and their alignment with best practice. Need specific training? Use our rapid authoring tool to tailor content to the needs of your organisation at no extra cost.
+
+                    Regularly updated to align with current legislation and best practice
+                    Add your own text, images, videos, interactions and more
+                    Effortlessly integrate our courses with your existing LMS
+                    Make sure everyone can engage with training with our accessibility features
+                    Receive dedicated support from our award-winning team</p>
+			                <p><a href="blog-single.html" class="btn btn-primary btn-outline-primary">Read more</a></p>
+			              </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-12 ftco-animate">
+		            <div class="blog-entry" data-aos-delay="100">
+		              <a href="blog-single.html" class="block-20" style="background-image: url({% static 'Carenapp/images/mental2.jpg' %});">
+		              </a>
+		              <div class="text d-flex py-4">
+		                <!-- <div class="meta mb-3">
+		                  <div><a href="#">Sep. 20, 2018</a></div>
+		                  <div><a href="#">Admin</a></div>
+		                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+		                </div> -->
+		                <div class="desc pl-sm-3 pl-md-5">
+			                <h3 class="heading"><a href="#">Business Protection Online Training</a></h3>
+			                <p>Effective Business Protection training sets the foundation for any successful compliance strategy. Our eLearning library includes fully interactive training that provides users with everything they need to know to operate safely in the workplace. All of our courses are regularly updated to align with current best practice and legislation.
+
+                        Need specific training? Use our rapid authoring tool to tailor content to the needs of your organisation at no extra cost.
+
+                        Regularly updated to align with current legislation and best practice
+                        Add your own text, images, videos, interactions and more
+                        Effortlessly integrate our courses with your existing LMS
+                        Ensure everyone can engage with training with our accessibility features
+                        Receive dedicated support from our award-winning team</p>
+			                <p><a href="blog-single.html" class="btn btn-primary btn-outline-primary">Read more</a></p>
+			              </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-12 ftco-animate">
+		            <div class="blog-entry" data-aos-delay="200">
+		              <a href="blog-single.html" class="block-20" style="background-image: url({% static 'Carenapp/images/mental.jpg' %});">
+		              </a>
+		              <div class="text d-flex py-4">
+		                <!-- <div class="meta mb-3">
+		                  <div><a href="#">Sep. 20, 2018</a></div>
+		                  <div><a href="#">Admin</a></div>
+		                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+		                </div> -->
+		                <div class="desc pl-sm-3 pl-md-5">
+			                <h3 class="heading"><a href="#">Mental Health & Wellbeing Online Training Courses</a></h3>
+			                <p>From Mindfulness to Stress Management, our interactive Mental Health & Wellbeing courses are designed to raise and promote mental health awareness in the workplace. Each and every course is regularly updated to ensure technical accuracy and their alignment with best practice. Need specific training? Use our rapid authoring tool
+
+                         Regularly updated to align with current legislation and best practice
+                         Add your own text, images, videos, interactions and more
+                         Effortlessly integrate our courses with your existing LMS
+                         Make sure everyone can engage with training with our accessibility features
+                         Receive dedicated support from our award-winning team</p>
+			                <p><a href="blog-single.html" class="btn btn-primary btn-outline-primary">Read more</a></p>
+			              </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-12 ftco-animate">
+		            <div class="blog-entry">
+		              <a href="blog-single.html" class="block-20" style="background-image: url({% static 'Carenapp/images/mental5.jpg' %});">
+		              </a>
+		              <div class="text d-flex py-4">
+		                <!-- <div class="meta mb-3">
+		                  <div><a href="#">Sep. 20, 2018</a></div>
+		                  <div><a href="#">Admin</a></div>
+		                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+		                </div> -->
+		                <div class="desc pl-sm-3 pl-md-5">
+			                <h3 class="heading"><a href="#">Healthy Living Awareness Online Training</a></h3>
+			                <p>This Healthy Living Awareness Online Training course covers:
+
+                        The benefits of healthy eating, hydration, physical activity and sleep.
+                        The risks to your health if nutrition, hydration, physical activity and sleep do not meet the recommended amounts.
+                        How you can make small changes to move towards a healthier lifestyle.</p>
+			                <p><a href="blog-single.html" class="btn btn-primary btn-outline-primary">Read more</a></p>
+			              </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-12 ftco-animate">
+		            <div class="blog-entry" data-aos-delay="100">
+		              <a href="blog-single.html" class="block-20" style="background-image: url({% static 'Carenapp/images/image_5.jpg' %});">
+		              </a>
+		              <div class="text d-flex py-4">
+		                
+		                <div class="desc pl-sm-3 pl-md-5">
+			                <h3 class="heading"><a href="#">Managing Health & Safety Online Training</a></h3>
+			                <p>This Managing Health and Safety Online Training course covers:
+
+                       The plan, do check, act framework for managing health and safety in the workplace.
+                       The need for worker participation and engagement in developing a positive safety culture.
+                       A manager’s responsibilities in managing the health and safety of employees under their supervision.</p>
+			                <p><a href="blog-single.html" class="btn btn-primary btn-outline-primary">Read more</a></p>
+			              </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-12 ftco-animate">
+		            <div class="blog-entry" data-aos-delay="200">
+		              <a href="blog-single.html" class="block-20" style="background-image: url({% static 'Carenapp/images/mental3.jpg' %});">
+		              </a>
+		              <div class="text d-flex py-4">
+		                
+		                <div class="desc pl-sm-3 pl-md-5">
+			                <h3 class="heading"><a href="#">Additional Courses</a></h3>
+			                <p>EssentialSkillz provide a number of additional courses outside of our core course packs. These courses either come with advanced certification, like our IOSH suite, or they might require further support from us before you can deploy them.
+
+                        All courses contain interactive, engaging content and exercises for the best user learning experience.
+
+                        White label our courses to unite your training under a single banner
+                        Effortlessly integrate our courses with your existing LMS
+                        Make sure everyone can engage with training with our accessibility features
+                        Receive dedicated support from our award-winning team
+                        IOSH courses are supplied by an approved IOSH training provider: International Workplace.</p>
+			                <p><a href="blog-single.html" class="btn btn-primary btn-outline-primary">Read more</a></p>
+			              </div>
+		              </div>
+		            </div>
+		          </div>
+						</div>
+						<div class="row mt-5">
+		          <div class="col">
+		            <div class="block-27">
+		              <ul>
+		                <li><a href="#">&lt;</a></li>
+		                <li class="active"><span>1</span></li>
+		                <li><a href="#">2</a></li>
+		                <li><a href="#">3</a></li>
+		                <li><a href="#">4</a></li>
+		                <li><a href="#">5</a></li>
+		                <li><a href="#">&gt;</a></li>
+		              </ul>
+		            </div>
+		          </div>
+		        </div>
+					</div> <!-- END: col-md-8 -->
+					<div class="col-md-4 sidebar ftco-animate">
+            <div class="sidebar-box">
+              <form action="#" class="search-form">
+                <div class="form-group">
+                  <span class="icon fa fa-search"></span>
+                  <input type="text" class="form-control" placeholder="Health & Safety, Business Protection and Wellbeing topics.">
+                </div>
+              </form>
+            </div>
+            <div class="sidebar-box ftco-animate">
+              <div class="categories">
+                <h3>Learn any of our courses </h3>
+                <li><a href="#">Health & Safety Training <span>(12)</span></a></li>
+                <li><a href="#">Business Protection Training <span>(22)</span></a></li>
+                <li><a href="#">Wellbeing Training <span>(37)</span></a></li>
+                <li><a href="#">Health & Safety Refresher Training<span>(42)</span></a></li>
+                <li><a href="#">Additional Training<span>(14)</span></a></li>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3>Recent Training</h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url({% static 'Carenapp/images/image_1.jpg' %});"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Telemedicine to Rural Health Care</a></h3>
+                  <!-- <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url({% static 'Carenapp/images/image_2.jpg' %});"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Medical Diagnosis</a></h3>
+                  <!-- <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url({% static 'Carenapp/images/image_3.jpg' %});"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">clinical health care</a></h3>
+                  <!-- <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3>Tag Cloud</h3>
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">dish</a>
+                <a href="#" class="tag-cloud-link">menu</a>
+                <a href="#" class="tag-cloud-link">food</a>
+                <a href="#" class="tag-cloud-link">sweet</a>
+                <a href="#" class="tag-cloud-link">tasty</a>
+                <a href="#" class="tag-cloud-link">delicious</a>
+                <a href="#" class="tag-cloud-link">desserts</a>
+                <a href="#" class="tag-cloud-link">drinks</a>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3>Course Content</h3>
+              <p>The Healthy Living Awareness course is part of our Wellbeing pack and describes the benefits of a healthy lifestyle and the risks of not adopting healthy practices. The course focuses on four aspects of healthy living:
+                 <br/>
+                 Nutrition
+                  <br/>
+                 Hydration
+                  <br/>
+                 Physical activity
+                  <br/>
+                 Sleep
+                  <br/>
+                The course also highlights the risks associated with excessive alcohol consumption and tobacco use, and offers techniques to help you reduce alcohol consumption and quit smoking. These lessons include the most up-to-date advice from the World Health Organization, British Heart Foundation and the National Health Service to inform people how they improve their health in each of these areas.
+
+                It is critical to take care of your physical health, as doing so can reduce the risk of developing an NCD and can increase your overall health and wellbeing.
+
+                Like all our Healthy Living Awareness course can be customised to meet your needs, enabling your workforce to understand specific content developed for your organisation. A designated course administrator can edit the text and images within the course, and link to organisation-specific documentation, all at no extra cost.</p>
+            </div>
+          </div>
+				</div>
+			</div>
+		</section>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">HLAMS.</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            </div>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
+              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Features</a></li>
+                <li><a href="#" class="py-2 d-block">Projects</a></li>
+                <li><a href="#" class="py-2 d-block">Blog</a></li>
+                <li><a href="#" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 pr-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent courses</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url({% static 'Carenapp/images/caren.jpg' %});"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> may 1, 2023</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url({% static 'Carenapp/images/caren.jpg' %});"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> may 1, 2023</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Office</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Nairobi,Kenya</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+254 110831614</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">carenakhonya2002@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Caren Akhonya and Abijahnjoki Gitau</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog" aria-labelledby="modalRequestLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRequestLabel">Make an Appointment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="#">
+            <div class="form-group">
+              <!-- <label for="appointment_name" class="text-black">Full Name</label> -->
+              <input type="text" class="form-control" id="appointment_name" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+              <!-- <label for="appointment_email" class="text-black">Email</label> -->
+              <input type="text" class="form-control" id="appointment_email" placeholder="Email">
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <!-- <label for="appointment_date" class="text-black">Date</label> -->
+                  <input type="text" class="form-control appointment_date" placeholder="Date">
+                </div>    
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <!-- <label for="appointment_time" class="text-black">Time</label> -->
+                  <input type="text" class="form-control appointment_time" placeholder="Time">
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="form-group">
+              <!-- <label for="appointment_message" class="text-black">Message</label> -->
+              <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Make an Appointment" class="btn btn-primary">
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <script src="{% static 'Carenapp/js/jquery.min.js' %}"></script>
+  <script src="{% static 'Carenapp/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'Carenapp/js/popper.min.js' %}"></script>
+  <script src="{% static 'Carenapp/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'Carenapp/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'Carenapp/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'Carenapp/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'Carenapp/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'Carenapp/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'Carenapp/js/aos.js' %}"></script>
+  <script src="{% static 'Carenapp/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'Carenapp/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'Carenapp/js/jquery.timepicker.min.js' %}"></script>
+  <script src="{% static 'Carenapp/js/scrollax.min.js' %}"></script>
+  <script src="{% static 'Carenapp/https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'Carenapp/js/google-map.js' %}"></script>
+  <script src="{% static 'Carenapp/js/main.js' %}"></script>
+    
+  </body>
+</html>
