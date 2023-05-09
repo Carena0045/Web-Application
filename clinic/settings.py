@@ -26,17 +26,17 @@ BASE_DIR =os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-v3+z)3paox0op5h2)by6%wa1*!94@jku302lcb0bk20qs_r+z2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [127.0.0.1]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'material',
-     'material.admin',
-    # 'django.contrib.admin',
+    # 'material',
+    #  'material.admin',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
