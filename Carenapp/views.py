@@ -159,6 +159,6 @@ class ManageAppointmentTemplateView(ListView):
 class patienthomeView(TemplateView):
     template_name = "patienthome.html"
 class doctorviewappointment(TemplateView):
-    template_name = "doctorviewappointment.html"    
+    template_name = "doctorviewappointment .html"    
   
           
